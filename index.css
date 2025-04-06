@@ -77,7 +77,12 @@ div:first-child p:nth-child(1n + 5):hover{
 	cursor: pointer;
 }
 
+div:first-child p:last-of-type {
+	margin-bottom: 15px;
+}
+
 img {
+	margin-top: 10px;
 	height: 25%;
 	width: 25%;
 	border-radius: 50%;
