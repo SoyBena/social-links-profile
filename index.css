@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --background-color: rgb(20, 20, 20);
+    --secondary-bg-color: rgb(31, 31, 31);
+	--green: hsl(75, 94%, 57%);
+}
+
+body {
+    background-color: var(--background-color);
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    overflow-y: hidden;
+
+	font-family: "Inter", sans-serif;
+}
+
+div:first-child {
+    color: white;
+    width: 325px;
+
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+
+    background-color:var(--secondary-bg-color);
+    padding: 25px;
+    border-radius: 10px;
+
+}
+
+h1 {
+	font-weight: normal;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+h2 {
+	color: var(--green);
+	font-size: 13px;
+
+	margin-top: 0px;
+}
+
+
+div:first-child p:first-of-type {
+	font-size: 13px;
+	color:rgb(188, 188, 188);
+}
+
+div:first-child p:nth-child(1n + 5) {
+	background-color: rgb(51, 51, 51);
+	width: 325px;
+	text-align: center;
+
+	font-weight: bold;
+	font-size: 13px;
+
+	padding: 15px 0;
+	border-radius: 10px;
+
+	margin: 7px 0;
+
+	transition: 0.1s all linear;
+	
+}
+
+div:first-child p:nth-child(1n + 5):hover{
+	background-color:var(--green);
+	color:var(--background-color);
+	cursor: pointer;
+}
+
+img {
+	height: 25%;
+	width: 25%;
+	border-radius: 50%;
+}
